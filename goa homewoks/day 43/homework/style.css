@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Triodion&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Todhri&family=Triodion&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Todhri&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Triodion&display=swap');
+
+
+p {
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+#gg {
+  font-family: 'Triodion', sans-serif;
+  text-align: center;
+}
+#aa {
+font-family: "Noto Serif Todhri", serif;
+font-weight: 400;
+font-style: normal;
+}
+#bb {
+ font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+#fhg {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#fhgg {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#fhggg {
+    font-family: 'Triodion', sans-serif;
+}
