@@ -1,0 +1,13 @@
+#axaliw{
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 500px;
+}
+div{
+    width: 80%;
+    margin: 0 auto;
+}
+div:nth-child(1){
+    width: 80%;
+}

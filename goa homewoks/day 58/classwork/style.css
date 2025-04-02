@@ -1,0 +1,70 @@
+#div1 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  animation: change 3s infinite;
+}
+@keyframes change {
+  0% {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+  }
+  50% {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+}
+
+#div2{
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    animation: change 5s
+}
+@keyframes change {
+    0% {
+        width: 40px;
+        height: 40px;
+        background-color: green;
+    }
+    25% {
+        width: 60px;
+        height: 60px;
+        background-color: red;
+    }
+    50% {
+        width: 60px;
+        height: 60px;
+        background-color: green;
+    }
+    75% {
+        width: 40px;
+        height: 40px;
+        background-color: yellow;
+    }
+    100% {
+        width: 40px;
+        height: 40px;
+        background-color: green;
+    }
+}
+#div3{
+    height: 150px;
+    width: 200px;
+    background-color: blue;
+    animation: 3s change;
+}
+@keyframes change{
+    0%{
+        background-color: orange;
+        width: 400px;
+        height: 300px;
+    }
+}
