@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //1//
+
+        function dd(name){
+        for (let i = 0; i < name.length; i++){
+            console.log(i);
+        }
+        }   
+        console.log(dd("nika"));
+        //2//
+
+        function agecontrol(name,age){
+        switch (age => 18) {
+            case true:
+                console.log(`hello ${name}`)
+                break;
+        
+            case false:
+                console.log("your not adult yet")
+                break;
+        }
+        }
+        console.log(agecontrol("nika", 20));
+
+    </script>
+</body>
+</html>
