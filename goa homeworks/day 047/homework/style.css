@@ -1,0 +1,12 @@
+tr,th,table {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+ul {
+    position: sticky;
+    text-wrap-style: square;
+}
+#gg{
+    background-color:palevioletred;
+}

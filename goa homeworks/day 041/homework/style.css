@@ -1,0 +1,20 @@
+
+#am {
+    text-decoration: underline;
+    text-decoration: wavy;
+    text-decoration: color(rgb(12, 174, 12));
+    color: rgb(0, 0, 0) ;
+
+  }
+  
+#gg {
+    text-decoration: underline overline;
+    text-decoration: dashed;
+    color:gold;
+  }
+  
+#ee {
+    text-decoration: line-through;
+    text-decoration: dashed;
+    color:black;
+  }

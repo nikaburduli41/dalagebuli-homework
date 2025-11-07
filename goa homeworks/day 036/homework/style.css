@@ -1,0 +1,28 @@
+img {
+    width: 500px;
+}
+h3 {
+    color: blueviolet;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+#welcome {
+    color: red;
+}
+.amama {
+    color: blueviolet;
+}
+#good {
+    color: blue;
+}
+#best {
+    color: aquamarine;
+}
+.bbb {
+    color: black;
+}

@@ -1,0 +1,19 @@
+tr,th,table {
+    border: 1px solid;
+}
+table{
+    background-color: blue;
+    color: white;
+}
+th,tr:nth-child(even){
+    background-color: green;
+}
+th,tr:nth-child(odd){
+    background-color: red;
+}
+th,tr:hover{
+    background-color: black;
+    color: white;
+}
+
+    

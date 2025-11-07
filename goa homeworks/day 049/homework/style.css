@@ -1,0 +1,17 @@
+#header{
+    border-radius: 10px 20px 10px 20px;
+    border: 1px solid hsl(0, 0%, 0%);
+    display: block;
+    flex: auto;
+}
+div{
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
