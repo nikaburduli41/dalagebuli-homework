@@ -1,0 +1,27 @@
+#fasi{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px hsl(0, 0%, 80%);
+    padding: 20px;
+    width: 350px;
+    margin: auto;
+}
+#namdvili{
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(0, 0%, 0%);
+}
+#photo{
+    width: 50%;
+    border-radius: 10px;
+}
+#cmeoredi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+#mtc{
+    display: flex;
+    align-items: center;
+}
