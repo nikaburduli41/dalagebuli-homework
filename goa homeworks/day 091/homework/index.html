@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #divg{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: solid 2px black;
+    }
+</style>
+<body>
+    <!-- 1 -->
+    <!-- rogor sevqmnat eventlistener -->
+    <button id="id">Click me</button>
+     <!-- 4 -->
+    <div id="divg"></div>
+    <!-- 5 -->
+    <button id="id1">Click me too</button>
+    <button id="id2">Click me three</button>
+    <button id="id3">Click me four</button>
+    <button id="id4">Click me five</button>
+    <button id="id5">Click me six</button>
+     <script>
+         document.getElementById("id").addEventListener("click", function() {
+             alert("thats all");
+         });
+            document.getElementById("divg").addEventListener("click", function() {
+                this.style.backgroundColor = "blue";
+                this.style.width = "200px";
+                this.style.height = "200px";
+                this.style.border = "solid 2px green";
+                this.style.borderRadius = "50%";
+                this.style.transition = "1s";
+            });
+            const b1 = document.getElementById("id1");
+            const b2 = document.getElementById("id2");
+            const b3 = document.getElementById("id3");
+            const b4 = document.getElementById("id4");  
+            const b5 = document.getElementById("id5");
+            b1.addEventListener("click", function() {
+                alert("button 1");
+            });
+            b2.addEventListener("click", function() {
+                alert("button 2");
+            });
+            b3.addEventListener("click", function() {
+                alert("button 3");
+            });
+            b4.addEventListener("click", function() {
+                alert("button 4");
+            });
+            b5.addEventListener("click", function() {
+                alert("button 5");
+            });
+     </script>
+</body>
+</html>

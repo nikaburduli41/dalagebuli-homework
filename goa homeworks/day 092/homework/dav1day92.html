@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" name="name" placeholder="enter your name" id="name">
+        <input type="text" name="surname" placeholder="enter your surname" id="surname">
+        <input type="date" name="date" placeholder="enter your date of birth" id="date">
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        const form = document.getElementById("myForm")
+        const result = document.getElementById("result")
+
+        form.addEventListener("submit", function(e){
+        e.preventDefault();
+
+        const name = form.name.value
+        const surname = form.surname.value
+        let date = form.date.value
+        date = date.split("-")
+        months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+        result.innerHTML = `
+            <p>Name: ${name}</p>
+            <p>Surname: ${surname}</p>
+            <p>Date of Birth: ${date[2]} ${months[date[1] - 1]} ${date[0]}</p>
+        `
+        });
+
+    </script>
+    </script>
+</body>
+</html>

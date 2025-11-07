@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<center>
+<div id="di" style="background-color: white;">
+  
+
+  <h2>Contact Us</h2>
+  <label for="namef" id="rr">First name</label><label id="rig" for="namel">Last name</label><br>
+  <input type="text" id="namef" name="namef" required>
+  
+  
+  <input type="text" id="namel" name="namel" required>
+
+
+
+  <br>
+  <label for="email">Email Address</label><br>
+  <input type="email" id="email" name="email" required>
+<br>
+  <label for="tt">Query Type</label><br>
+  <div id="ddsds">
+  <button class="btn"><input type="radio" id="tt" name="tt" required>General Enquiry</input></button>
+  <button class="btn"><input type="radio" id="tt" name="tt" required>Support Request</input></button>
+
+  </div>
+
+
+  <br>
+  <label for="message">Message</label><br>
+  <input type="text" id="message" name="message" required><br>
+  <br>
+  <input type="checkbox" name="check" id="check" required>I consent to being contacted by team</input><br><br>
+  <button id="submit">Submit</button>
+  <br>
+
+
+
+</center>
+</div>
+    <script>
+    const btn = document.getElementById('submit');
+    btn.addEventListener("submit", function(e){
+      e.preventDefault()
+      alert(" Message Sent! Thanks for completing the form. We'll be in touch soon!");
+    })
+  </script>
+</body>
+</html>

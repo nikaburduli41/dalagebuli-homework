@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #instagram {
+        font-family: 'Pacifico', cursive;
+    }
+    div {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    input {
+        line-height: 300px;
+        width: 300px;
+        height: 30px;
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+    button {
+        background-color: #0095f6;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 5px;
+        width: 300px;
+        height: 30px;
+    }
+</style>
+<body>
+    <div>
+        <h1 id="instagram">instagram</h1>
+        <input type="phone,text,email" placeholder="phone number, username or email" id="input1">
+        <br>
+        <input type="password" placeholder="password" id="input2">
+        <br>
+        <button id="loginbutton">Log in</button>
+        <br>
+        <p>-------------------------- OR -------------------------</p>
+        <br>
+        <a style="color: rgb(40, 40, 119); text-decoration: none; font-size: 25px" href="#">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXb7Qt9RllZrQnGtsmFHiag6cfe1qTV94hAg&s" alt="logo" style="width: 25px;height: 25px;">
+        log in with facebook</a>
+        <br>
+        <p>Forgot password?</p>
+    </div>
+    <script>
+        const loginButton = document.getElementById('loginbutton');
+        const input1 = document.getElementById('input1');
+        const input2 = document.getElementById('input2');
+        loginButton.addEventListener('click', function(){
+            console.log(input1.value, input2.value);
+        })
+    </script>
+</body>
+</html>

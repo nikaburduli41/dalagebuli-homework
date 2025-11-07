@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        color: white;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        background-color: #000000;
+        color: #ffffff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+    input, button {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none; 
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 300px;
+    }
+    h1{
+        color: white;
+    }
+    button {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+        border: 2px solid rgb(0, 0, 0);
+        transition: 1s;
+    }
+    button:hover {
+        background-color: rgb(255, 183, 0);
+        cursor: pointer;
+    }
+</style>
+<body>
+    <!-- 3 -->
+    <h1>sign up</h1>
+    <input type="text" id="input1" placeholder="first name" required>
+    <input type="text" id="input2" placeholder="last name" required>
+    <input type="email" id="input3" placeholder="email" required>
+    <input type="password" id="input4" placeholder="password" required>
+    <button id="submit" onclick="location.href='main.html'">Submit</button>
+    <p>-------------------- OR --------------------</p>
+    <p>sign up with Google</p>
+    <br>
+    <p>Forgot password?</p>
+    <script src="script2.js"></script>
+</body>
+</html>

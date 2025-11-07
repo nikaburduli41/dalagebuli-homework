@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--1-->
+    <button id="button">click</button>
+    <!--3-->
+    <button id="sub">click</button>
+    <!--4-->
+    <div id="idk">
+        <input type="text" placeholder="name">
+        <input type="text" placeholder="surname">
+        <input type="password" placeholder="email">
+        <input type="password" placeholder="password">
+        <input type="button" value="submit" id="submit">
+    </div>
+    <script>
+        //1//
+        const n = "nika"
+        const w = document.getElementById('button')
+        w.addEventListener('click', function() {
+            alert(`hello ${n}`);
+        })
+        //3//
+        let num = 0;
+        sub.addEventListener('click', function(){
+            num = num + 2;
+            console.log(num);
+        });
+        //4//
+        const submit = document.getElementById('submit');
+        submit.addEventListener('click', function(){
+            alert("Registration completed successfully.");
+        });
+    </script>
+</body>
+</html>
