@@ -1,1 +1,0 @@
-# dalagebuli-homework
