@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //1//
+        function grhi(name){
+            let num = prompt("Enter a number");
+            let i = 0;
+            while (i < num) {
+                console.log("hello " + name);
+                i++;
+            }
+
+        }
+        console.log(grhi("nika"));
+        //2//
+
+        function guessnum(number){;
+            let other = prompt('enter number 1 to 10');
+            switch (number == other){
+                case number == other: 
+                    console.log("ყოჩაღ შენ გამოიცანი");
+                    break;
+                case number !== other:
+                    other = console.log(prompt('enter number 1 to 10'));
+                    break;
+                default:
+                    other = console.log(prompt('enter number 1 to 10'));
+                    break;
+            }
+        }
+        console.log(guessnum(7));
+        //3//
+        function discount(price){
+            let age = prompt('enter age');
+            if (age < 19) {
+                console.log("30% discount");
+            }
+            else if (age >= 19 && age < 50){
+                console.log("10% discount");
+            }
+            else if (age > 50){
+                console.log("50% discount");
+            }
+        }
+    </script>
+</body>
+</html>
