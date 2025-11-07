@@ -1,0 +1,86 @@
+img{
+    width: 300px;
+    border-radius: 50%;
+    margin-right: 300px;
+    margin-top: 400px;
+}
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.s{
+    position: absolute;
+    margin-left: 500px;
+    margin-bottom:150px;
+}
+.d{
+    position: absolute;
+    margin-left: 500px;
+}
+button{
+    border-radius: 50%;
+    border: none;
+    padding: 50px;
+    font-size: 30px;
+}
+#but1{
+    background-color: aqua;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 125px;
+    transition: 0.5s;
+}
+#but2{
+    background-color: brown;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 450px;
+    transition: 0.5s;
+}
+#but3{
+    background-color: blueviolet;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 750px;
+    transition: 0.5s;
+}
+#but4{
+    background-color: cadetblue;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 1050px;
+    transition: 0.5s;
+}
+#but4,#but3{
+    padding: 50px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+#but1:hover{
+    transform: scale(1.1);
+}
+#but2:hover{
+    transform: scale(1.1);
+}
+#but3:hover{
+    transform: scale(1.1);
+}
+#but4:hover{
+    transform: scale(1.1);
+}
+#sw{
+    margin-top: 300px;
+}
+#de1{
+    position: absolute;
+    margin-top: 1100px;
+    margin-right: 500px;
+}
+#de2{
+    position: absolute;
+    margin-top: 1100px;
+    margin-left: 400px;
+}

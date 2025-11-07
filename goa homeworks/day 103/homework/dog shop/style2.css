@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#rf{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: black;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 75px;
+}
+input{
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: white;
+    color: black;
+}
+#rform{
+    background-color: black;
+}
+#rform button{
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    transition: 1.5s;
+}
+#lform{
+    background-color: black;
+}
+#lform button{
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    transition: 1.5s;
+}
+#lf{
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: black;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 105px;
+    padding-top: 105px;
+}
