@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .wrong {
+        border-radius: 6px;
+        height: 40px;
+        width: 150px;
+      }
+      #right {
+        border-radius: 6px;
+        height: 40px;
+        width: 150px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h3>score</h3>
+      <button>0</button>
+      <h2>choose correct option</h2>
+
+      <div id="answers">
+        <button class="wrong" style="background-color: orange">print5</button><br>
+        <button id="right" style="background-color: green">print(5)</button><br>
+        <button class="wrong" style="background-color: cyan">print5)</button>
+      </div>
+    </div>
+
+    <script>
+        let wrong = document.getElementsByClassName(wrong);
+
+        for( let i=o; i < wrong.length; i++){
+            wrong[i].onclick = function(){
+                if(classname === rigth){
+                    this.style.background = "green";
+
+                } else {
+                    this.style.background = "red"
+                }
+            }
+
+        }
+    </script>
+  </body>
+</html>
