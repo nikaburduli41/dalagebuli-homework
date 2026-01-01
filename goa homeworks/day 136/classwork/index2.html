@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classwork</title>
+</head>
+<style>
+    body{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    div{
+        margin-top: 300px;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    input{
+        border-radius: 10px;
+        width: 300px;
+        height: 30px;
+    }
+    button{
+        color: black;
+        border-radius: 10px;
+        padding: 5px;
+        height: 30px;
+    }
+</style>
+<body>
+    <div>
+            <input type="text" placeholder="password" id="input">
+            <button id="btn">check</button>
+
+            <h1 id="display">password strenght</h1>
+    </div>
+
+<script>
+    let btn = document.getElementById('btn')
+    let display = document.getElementById('display')
+    let alphabet = 'ABCDEFGHIKLMNOPQRSTVXYZ'
+    for(let i = 0;i <alphabet.length;i++){
+        console.log(alphabet[i])
+    
+    btn.addEventListener('click',function(e){
+        e.preventDefault
+        let input = document.getElementById('input').value
+        if(input.length < 6){
+            display.textContent = `password strenght weak`
+        }
+        else if(input.length >= 6 || input.length >= 6 && input.includes(alphabet[i])){
+            display.textContent = `password strenght medium`
+        }
+        else if(input.length >= 8 || input.length >= 8 && input.includes(alphabet[i])){
+            display.textContent = `password strenght strong`  
+        }
+    })
+}
+</script>
+</body>
+</html>
