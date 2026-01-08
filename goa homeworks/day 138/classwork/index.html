@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn1 {
+            background: rgb(63, 9, 114);
+            color: white;
+            display: flex;
+            width: 150px;
+            height: 35px;
+            justify-content: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="maindiv">
+        <center><button id="btn1">click to add notes</button></center>
+    </div>
+
+    <script>
+        const btn1 = document.getElementById('btn1')
+        const maindiv = document.getElementById('maindiv')
+
+        btn1.addEventListener('click', (e) => {
+            e.preventDefault()
+            const textadd = document.createElement('textarea')
+            textadd.style.width = '200px'
+            textadd.style.height = '200px'
+            textadd.placeholder = 'enter text'
+            textadd.style.borderRadius = '10px'
+            
+            maindiv.appendChild(textadd)
+        });
+    </script>
+</body>
+</html>
