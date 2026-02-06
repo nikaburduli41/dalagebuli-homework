@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #94EB9B;
+}
+img{
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+}
+#maindiv{
+    background-color: #F0F8FE;
+    padding-left: 600px;
+    border-radius: 10px;
+    padding-right: 600px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+}
+#btn{
+    width: 250px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+input{
+    width: 240px;
+    height: 25px;
+    border-radius: 10px;
+}
