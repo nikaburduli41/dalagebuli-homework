@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="maindiv">
+        <div id="div1">
+            <img src="https://demo.100jsprojects.com/drum-kits/images/crash.png" id="img1">
+            <h1 id="h">crash</h1>
+        </div>
+        <div id="div2">
+            <img src="https://demo.100jsprojects.com/drum-kits/images/kick.png" id="img2">
+            <h1 id="hh">kick</h1>
+        </div>
+        <div id="div3">
+            <img src="https://demo.100jsprojects.com/drum-kits/images/snare.png" id="img3">
+            <h1 id="hhh">snare</h1>
+        </div>
+        <div id="div4">
+            <img src="https://demo.100jsprojects.com/drum-kits/images/tom.png" id="img4">
+            <h1 id="hhhh">drums</h1>
+        </div>
+
+        <audio id="a1" src="" autoplay></audio>
+    </div>
+
+
+
+
+    <script>
+        const btn1 = document.getElementById("div1")
+        const btn2 = document.getElementById("div2")
+        const btn3 = document.getElementById("div3")
+        const btn4 = document.getElementById("div4")
+        const s1 = document.getElementById('a1')
+
+        btn1.addEventListener("click",() =>{
+            s1.src = "./first.mp3"
+        })
+
+        btn2.addEventListener("click",() =>{
+            s1.src = "./sec.mp3"
+        })
+
+        btn3.addEventListener("click",() =>{
+            s1.src = "./th.mp3"
+        })
+        btn4.addEventListener("click",() =>{
+            s1.src = "./tom.mp3"
+        })
+    </script>
+</body>
+</html>
