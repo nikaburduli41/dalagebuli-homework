@@ -1,0 +1,28 @@
+#welco{
+    color: blue;
+}
+.site {
+    color: blueviolet;
+}
+header {
+    background-color: azure;
+    text-align: center;
+}
+body {
+    background-color: bisque;
+}
+h2 {
+    color: blueviolet;
+    text-align: center;
+}
+img {
+    width: 350px;
+}
+.ik {
+    color: blue;
+    background-color: bisque;
+}
+.ki {
+    color: aqua;
+    background-color: bisque;
+}

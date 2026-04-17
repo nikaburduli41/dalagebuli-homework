@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(51, 136, 248); 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#qe{
+    color: white;
+}
+#maindiv{
+    background-color: #1669D5;
+    padding: 50px;
+    padding-left: 490px;
+    padding-right: 490px;
+    border-radius: 20px;
+    margin-bottom: 30px;    
+}
+#inp1{
+    background-color: #FFFFFF;
+    color: black;
+    border-radius: 30px;
+    width: 900px;
+    height: 80px;
+    font-size: 30px;
+    margin-top: 300px;
+    opacity: 0px;
+}
+button{
+    border-radius: 20px;
+    width: 250px;
+    height: 80px;
+    font-size: 30px;
+    background-color: #FFFFFF;
+    opacity: 80px;
+    font-family: sans-serif;
+
+}
+
+
+#chat{
+    background-color: #D9D9D9;
+
+    border-radius: 40px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#user {
+    text-align: right;
+    margin-left: auto; 
+    padding: 8px;
+    border-radius: 10px;
+}
+
+#bot {
+    padding: 8px;
+    border-radius: 10px;
+    text-align: left;
+    margin-right: auto;
+}
+.user-msg {
+    background: #3982f4;
+    color: white;
+    align-self: flex-end;
+}
+
+.bot-msg {
+    background: #e7e6eb;
+    color: black;
+    align-self: flex-start;
+}

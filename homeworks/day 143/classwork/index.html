@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="maindiv">
+        <h1>Photo Gallery</h1>
+        <br>
+        <h2>Enter the number of photos</h2>
+        <br>
+        <input type="number" id="numberinp">
+        <br><br>
+        <button id="btn">GET PHOTOS</button>
+    </div>
+    <div id="imgs"></div>
+
+
+<script>
+  const div = document.getElementById("imgs");
+  const btn = document.getElementById("btn");
+
+  btn.addEventListener("click", () => {
+    const count = document.getElementById("numberinp").value
+    div.innerHTML = ""
+
+    fetch(`https://api.unsplash.com/photos/random?count=${count}&client_id=_5waPicuqqy19X-Z7GVrIL08A_mKOgOSFp1vWKz3CkI`)
+      .then(res => res.json())
+      .then(data => {
+        for (let i = 0; i < data.length; i++) {
+          const img = document.createElement("img")
+
+          img.src = data[i].urls.small
+          div.appendChild(img)
+        }
+      })
+  });
+</script>
+
+
+</body>
+</html>

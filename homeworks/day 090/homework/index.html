@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #idk{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid black;
+    }
+   
+</style>
+<body>
+    <button id="button">enter</button>
+
+    <input type="text" placeholder="name" name="name" id="na">
+    <input type="email" placeholder="email" name="email" id="em">
+    <input type="password" placeholder="password" name="password" id="pas">
+    <input type="button" value="submit" id="sub">
+
+    <div id="idk">
+    </div>
+    <script>
+        //2//
+        let num = 7;
+        const button = document.getElementById('button');
+        button.addEventListener('click', function() {
+            let guess = prompt("შეიყვანეთ რიცხვი 10 ფარგლებში");
+            if (num == guess){
+                alert("შენ გამოიცანი ჩემი რიცხვი");
+            } else {
+                alert("შენ ვერ გამოიცანი ჩემი რიცხვი");
+            } 
+        });
+        //3//
+        const name = document.getElementById('na');
+        const email = document.getElementById('em');
+        const password = document.getElementById('pas');
+        const submit = document.getElementById('sub');
+        submit.addEventListener('click', function() {
+            alert("შენ წარმატებით გაიარე რეგისტრაცია");
+            console.log(name.value, email.value, password.value);
+        });
+        //4//
+        let div1 = document.getElementById('idk');
+
+        div1.addEventListener('click', function() {
+                div1.style.height = "200px";
+                div1.style.width = "200px";
+                div1.style.backgroundColor = "blue";
+                div1.style.borderRadius = "50%";
+                div1.style.position = "absolute";
+                div1.style.border = "2px solid black";
+        });
+
+    </script>
+</body>
+</html>

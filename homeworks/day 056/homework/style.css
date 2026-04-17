@@ -1,0 +1,50 @@
+#div1{
+    background-color: blue;
+    width: 250px;
+    height: 250px;
+    transition: 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div1:hover{
+    background-color: red;
+}
+#div2{
+    background-color: rgb(255, 0, 0);
+    width: 200px;
+    height: 200px;
+    transition: 2s;
+}
+#div2:hover{
+    background-color: blue;
+}
+#pp{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pp1{
+    background-color: rgb(56, 56, 56);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img{
+    width: 100px;
+    height: 100px;
+    transition: 2s;
+}
+#img:hover{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    transform: translateY(150px);
+    transform: translateX(200px);
+}

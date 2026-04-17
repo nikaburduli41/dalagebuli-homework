@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainDiv {
+    display: flex;
+    gap: 150px;
+}
+
+#mainDiv div {
+    text-align: center;
+}
+
+form {
+    background-color: #2222227a;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+button {
+    font-size: 1.05rem;
+    padding: 5px;
+    border: 1px solid rgb(92, 92, 92);
+    background-color: rgb(55, 205, 255);
+    transition: 0.25s;
+}
+
+button:hover {
+    background-color: rgb(0, 134, 179);
+}

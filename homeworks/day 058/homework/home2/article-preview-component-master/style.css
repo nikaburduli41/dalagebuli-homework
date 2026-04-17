@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#parentmain{
+    display: flex;
+    background-color: white;
+}
+#rightdiv{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#mainp{
+    color:hsl(217, 19%, 34%); ;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+#descp{
+    color:hsl(217, 17%, 51%);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+#avtorimg{
+    border-radius: 50%;
+}
+#bottomdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#bottomleft{
+    display: flex;
+    gap: 15px;
+}
+#drawersimg{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: 300px;
+    height: 300px;
+}
+
+#bottomright{
+    display: flex;
+    gap: 15px;
+}
+
+

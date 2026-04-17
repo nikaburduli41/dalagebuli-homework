@@ -1,0 +1,24 @@
+a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+a:active{
+    color: rgb(0, 0, 0);
+}
+body {
+    background-color: white;
+}
+img:hover{
+    width:500px;
+}
+img {
+    width: 300px;
+    transition: 3s;
+}
+#gg {
+    text-align: center;
+}
+a:visited{
+    color: green;
+}

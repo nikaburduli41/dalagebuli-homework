@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1 -->
+    <div id="amamam">
+        <button id="mmm">Click me</button>
+    </div>
+    <!-- 2 -->
+    <div id="colorrrrr">
+        <button>dd</button>
+        <p id="ww"> dd</p>
+    </div>
+    <!-- 3 -->
+    <div id="inputtttttsdefb">
+        <input type="name" placeholder="Enter your name" class="input">
+        <input type="username" placeholder="Enter your username" class="input">
+        <input type="age" placeholder="Enter your age" class="input">
+        <input type="button" value="Submit" id="submitButton">
+    </div>
+    <div id="output">
+
+    </div>
+    <script>
+        //1//
+        const amam = document.getElementById("amamam");
+        const mm = document.getElementById("mmm");
+        const imgs = [
+            `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5cgxOzgxuIVuIf2alWTPhertD4X5OBt3C5Q&s`,
+            `https://autonews-mag.com/images/5NCR_wWWE2Qhd.jpg`,
+            `https://images.pistonheads.com/nimg/44216-large.jpg`
+        ];
+
+        amam.addEventListener("click", function(){
+            amam.innerHTML += `
+            <img src="${imgs[Math.floor(Math.random() * imgs.length)]}">
+            `
+        })
+        //2//
+        const colorButton = document.getElementById("colorrrrr");
+        const colors = [
+            colorButton.style.color = "red",
+            colorButton.style.color = "blue",
+            colorButton.style.color = "green",
+            colorButton.style.color = "yellow",
+            colorButton.style.color = "purple",
+            colorButton.style.color = "orange",
+        ]
+        colorButton.addEventListener("click", function(){
+            colorButton.innerHTML += `
+            <p style="color: ${colors[Math.floor(Math.random() * colors.length)]}">Random Color</p>
+            `
+        });
+        //3//
+        const inputs = document.getElementsByClassName("input");
+        const button = document.getElementById("submitButton");
+        const output = document.getElementById("output");
+        button.addEventListener("click", function(ss){
+            ss.preventDefault();
+            output.innerHTML = `
+                <h1>hello your name is: ${inputs[0].value}</h1>
+                <h1>hello your surname is: ${inputs[1].value}</h1>
+                <h1>hello your age is: ${inputs[2].value}</h1>
+            `
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input{
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+
+    #btn{
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(100, 149, 237);
+        color: white;
+        cursor: pointer;
+    }
+
+    #paragraph{
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div>
+        <input id="inp1" type="number" placeholder="Loan Amount">
+        <input id="inp2" type="number" placeholder="Interest Rate">
+        <input id="inp3" type="number" placeholder="Payment Time (Month)">
+
+        <button id="btn">Calculate Monthly Payment</button>
+
+        <p id="paragraph"></p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html
