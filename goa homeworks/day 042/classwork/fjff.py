@@ -1,1 +1,0 @@
-#codewars gavaketet jgufurad
