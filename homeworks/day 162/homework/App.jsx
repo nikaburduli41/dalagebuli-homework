@@ -1,29 +1,25 @@
-import react from "react"
-import { useState } from "react"
- 
-function example(){
-    const[num,setNum] = useState(0)
-    function oldway(){
-        setNum(num + 1)
-        setNum(num + 1)
-    }
-    
-    function newway(){
-        setNum(prev =>{
-            prev + 1
-            return prev + 1
-        })
-    }
-    
-    return(
+//1//
 
-        <>
-            <button onClick={oldway}>old way adding</button>
-            <button onClick={newway}>new way adding</button>
-        </>
-
-    )
+function App(props){
+  let areyou = ''
+  if(props.age >= 30){
+    areyou = 'experinced'
+  }else if(props.age < 29){
+    areyou = 'young'
+  }
+  return(
+    <div style={{
+      backgroundColor:props.bColor
+      ,color:'gray'
+      ,textAlign:'center'
+      ,borderRadius:'15px'
+    }}>
+        <h1>you are {areyou}</h1>
+        <h1>your name {props.name}</h1>
+        <h1>your age {props.age}</h1>
+        <h1>where you live {props.city}</h1>
+        <h1>your fav color {props.bColor}</h1>
+    </div>
+  )
 }
-export default example
-//newway 2 damatebs xolme ramdenjerac ar unda davamatot da old 1 imitom or roca zveli gzit vaketebt setnum(num + 1) setnum(num + 1)setnum(num + 1)
-//           mag  num tu aris 0 yvelasi 0 iqneba da bolos erti daemateaba da axali gzit rom ari mnisvneloba icvleba da 0 tu iyo da orjer vqenit +1 +1                  
+export default App
