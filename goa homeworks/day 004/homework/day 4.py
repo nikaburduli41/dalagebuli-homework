@@ -1,5 +1,0 @@
-print (4+3)
-print (4*4)
-print (3+777)
-print (49+499)
-print(3777*2222)
