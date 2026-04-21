@@ -1,32 +1,18 @@
-import { useState } from "react"
+import React from "react";
+import Child from "./App2";
 
-function Num(){
-     const [Num, setNum] = useState(0)
+function Parent(){
+    return(
+        <>
+           <Child title="btn" desc="btn1">
+                <button>Click me</button>
+            </Child>
 
-     function handleclick(){
-          setNum(Num + 1)
-     }
-
-     function handleclick2(){
-          setNum(Num - 1)
-     }
-     function handleclick3(){
-          let Tf = Math.floor(Math.random() * 10) + 1
-          setNum(Num + Tf)
-     }
-     function handleclick4(){
-          setNum(Num - 10000)
-     }
-
-     return (
-          <div>
-               <h1>{Num}</h1>
-               <button onClick={handleclick}>+1</button>
-               <button onClick={handleclick2}>-1</button>
-               <button onClick={handleclick3}>random + 1 to 10</button>
-               <button onClick={handleclick4}>dont do it</button>
-          </div>
-     )
+            <Child title="btn2" desc="btn22">
+                <button>click me tooooooooooooooo</button>
+            </Child>
+        </>
+    )
 }
 
-export default Num
+export default Parent;

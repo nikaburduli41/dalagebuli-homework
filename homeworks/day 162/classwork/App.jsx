@@ -1,34 +1,23 @@
-import React from "react";
-import { useState } from "react";
+import { useState } from 'react'
 
 function App() {
-  const [list, setList] = useState(['A', 'B', 'C', 'D', "E"])
-  let randomNumber1 = Math.random(1 * 10)
-  const removeLast = () => {
-    setList(list.slice(0, -1))
-  }
-  const addElement = () =>{
-    setList(prev => [
-      ...list , "hello"
-    ])
-  }
-  const randomNumber = ()=>{
-    setList(prev => [
-      ...list , randomNumber1
-    ])
-  }
+  const [count, setCount] = useState(0)
+  function handleclick(){
+    setCount(count + 1)
+    // setCount(count + 1)
+    // setCount(count + 1)
 
+    // setCount.map(prev =>{
+    //   count + 1
+    // })
+    //  gansxvaveba ari ro roca setcount(count + 1) ramdenimejer iqneba count 0 iqneba da mere daemateba 1 da 3 tu iqneba mainc 1 iqneba da mapit gadavlisas ramdenjerac davwert imdenjer daemateba
+  }
   return (
     <>
-    <ol>
-      {list.map((char, index) => <li key={index}>{char}</li>)}
-    </ol>
-
-    <button onClick={removeLast}>Remove Last Element</button>
-    <button onClick={addElement}>add element</button>
-    <button onClick={randomNumber}>add random number</button>
+      <p>{count}</p>
+      <button onclick={handleclick}>click me</button>
     </>
   )
 }
 
-export default App
+export default App 
