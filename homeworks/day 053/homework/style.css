@@ -1,0 +1,89 @@
+#parent{
+   width: 500px;
+   height: 500px;
+   border: 1px solid black;
+   position: relative;
+}
+#child1{
+   width: 100px;
+   height: 100px;
+   background-color: red;
+   position:absolute;
+}
+#child2{
+   width: 100px;
+   height: 100px;
+   background-color: green;
+   position: absolute;
+}
+#child3{
+   width: 100px;
+   height: 100px;
+   background-color: blue;
+   position: absolute;
+}
+#child4{
+   width: 100px;
+   height: 100px;
+   background-color: yellow;
+   position: absolute;
+}
+#child5{
+   width: 100px;
+   height: 100px;
+   background-color: pink;
+   position: absolute;
+}
+#child6{
+   width: 100px;
+   height: 100px;
+   background-color: orange;
+   position: absolute;
+}
+#child7{
+   width: 100px;
+   height: 100px;
+   background-color: purple;
+   position: absolute;
+}
+#child8{
+   width: 100px;
+   height: 100px;
+   background-color: brown;
+   position: absolute;
+}
+#parent2{
+   width: 400px;
+   height: 400px;
+   border: 2px solid black;
+   position: relative;
+}
+#cp2{
+   width: 100px;
+   height: 100px;
+   background-color: red;
+   position: absolute;
+   flex-grow: 1;
+}
+#div3{
+   width: 500x;
+   height: 500px;
+   border: 1px solid black;
+   position: relative;
+}
+#chi{
+   width: 100px;
+   height: 100px;
+   background-color: red;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+#chi2{
+   width: 100px;
+   height: 100px;
+   background-color: green;
+   position: absolute;
+   top: 0px;
+   left: 40px;
+}

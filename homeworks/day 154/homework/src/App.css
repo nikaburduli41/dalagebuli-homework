@@ -1,0 +1,59 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background: #f7f9fc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+code {
+  font-family: "Courier New", monospace;
+}
+
+.app {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: radial-gradient(circle at top, #fff5e6 0%, #f7f9fc 55%);
+}
+
+.card {
+  width: min(100%, 560px);
+  padding: 32px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 18px 50px rgba(31, 41, 55, 0.1);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c2410c;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(30px, 5vw, 42px);
+}
+
+p,
+li {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+ul {
+  margin: 20px 0 0;
+  padding-left: 20px;
+}
+
