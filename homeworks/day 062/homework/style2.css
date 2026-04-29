@@ -1,0 +1,38 @@
+#container{
+    display: grid;
+    grid-template-columns: repeat(6,100px);
+    grid-template-rows: repeat(6,100px);
+    gap: 20px;
+}
+html{
+    background-color: orange;
+}
+#div1{
+    background-color: khaki;
+    border: 1px solid black;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+#div2{
+    background-color: khaki;
+    border: 1px solid black;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+#div3{
+    background-color: khaki;
+    border: 1px solid black;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+#div4{
+    background-color: khaki;
+    border: 1px solid black;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
